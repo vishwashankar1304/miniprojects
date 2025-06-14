@@ -1,5 +1,6 @@
 #include<stdio.h>
-
+#include<math.h>
+#include<stdlib.h>
 char *ones(int n) {
     switch(n) {
         case 1:
@@ -114,9 +115,11 @@ int main()
     char a[100];
     printf("\nEnter the number :");
     
-    //scanf("%lld",&num);
-    num=9865236886012;
+    scanf("%lld",&num);
+    
     printf("\nnumber to words :");
+    if(num<0)printf("Negative ");
+    num=abs(num);
     if(num==0)
     {
         printf("Zero");//for zero
