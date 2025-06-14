@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
+
 char *ones(int n) {
     switch(n) {
         case 1:
